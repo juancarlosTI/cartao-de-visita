@@ -1,0 +1,120 @@
+:root {
+    --cor-padrao:hsl(185, 75%, 39%);
+}
+
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+}
+body {
+    background-color: var(--cor-padrao);
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    max-width: 130px;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nome ,.idade{
+    margin-right: 5px;
+}
+
+
+.data ,.title ,.description {
+    text-align: center;
+    margin: 8px;
+}
+
+.description {
+    text-align: center;
+    color: gray;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.card {
+
+    margin-top: 5%;
+    font-family: 'Kumbh Sans', monospace;
+    display: block;
+    background-color: white;
+    width: 320px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.cidade {
+    margin: 20px;
+    text-align: center;
+}
+
+.social-info{
+    color: grey;
+    border-top: 0.1px solid;
+    justify-content: space-evenly;
+}
+
+.item {
+    color: black;
+    margin: 10px;
+    flex: 1;
+    
+}
+
+
+@media (max-width:425px){
+    .card {
+        margin-top: 25%;
+        width: 250px;
+    }
+
+    .photo {
+        margin-top: 20px;
+        max-width: 80px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .data ,.title ,.description {
+        text-align: center;
+        margin: 4px;
+    }
+
+    .item {
+        flex-basis: 50px;
+        flex-grow: 1;
+    }
+}
